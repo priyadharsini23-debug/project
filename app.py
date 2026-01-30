@@ -38,7 +38,9 @@ def upload_file():
 def symptom_check():
     data = request.json
     symptom = data.get('symptom', '')
-    
+
+    # Dummy logic
+    if 'Fever' in symptom:
         risk = "Medium"
         advice = "Possible viral infection. Rest & hydrate."
     elif 'Chest' in symptom:
